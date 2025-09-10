@@ -26,7 +26,7 @@ const Navbar = () => {
           onClick={handleToggle}
         />
         <a
-          href="https://github.com/AyushGour-crack-it/ReactToDo"
+          href="https://github.com/AyushGour-crack-it/React-Password-Manager"
           target="_blank"
           rel="noopener noreferrer"
         >

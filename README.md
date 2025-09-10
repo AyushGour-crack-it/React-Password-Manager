@@ -1,12 +1,68 @@
-# React + Vite
+# React Password Manager 🔐
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple, user-friendly **Password Manager** built with **React** and **Tailwind CSS**.  
+Store, update, and manage your website credentials securely in your browser using **localStorage**.  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features ✨
 
-## Expanding the ESLint configuration
+- Add, update, and delete credentials (Website, Username, Password).  
+- Toggle password visibility (show/hide).  
+- Copy username or password to clipboard with a single click.  
+- Responsive design: works perfectly on mobile, tablet, and desktop.  
+- Smooth UI animations using **Framer Motion**.  
+- Instant notifications using **react-hot-toast**.  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Screenshots 🖼️
+
+
+![App Screenshot](screenshot.png)
+
+
+---
+
+## Installation & Usage 💻
+
+1. Clone the repo:  
+   ```bash
+   git clone https://github.com/AyushGour-crack-it/React-Password-Manager.git
+   ```
+
+2. Navigate to the project folder:
+
+   ```bash
+   cd React-Password-Manager
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+---
+
+## Tech Stack 🛠️
+
+* **React** – Frontend library
+* **Tailwind CSS** – Styling
+* **Framer Motion** – Animations
+* **React Hot Toast** – Notifications
+* **Vite** – Development server & build tool
+
+---
+
+## License 📄
+
+This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
