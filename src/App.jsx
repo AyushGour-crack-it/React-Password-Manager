@@ -46,31 +46,30 @@ function App() {
     <div className="BiggestContainer font-sans bg-gray-100 min-h-screen flex flex-col">
       <Navbar />
 
-      <div className="leftBox w-[90%] sm:w-4/5 md:w-2/3 lg:w-1/2 mx-auto mt-5">
+       <div className="leftBox w-[90%] sm:w-4/5 md:w-2/3 lg:w-1/2 mx-auto mt-5">
         <LeftBox addEntry={addEntry} />
       </div>
-<div className="AllData mx-4 m-5 p-6 rounded-2xl border border-teal-200 
-  bg-gradient-to-br from-teal-50 to-white shadow-md 
-  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
-  {entries.length === 0 ? (
-    <p className="text-gray-500 text-center">No credentials saved yet.</p>
-  ) : (
-    entries.map((entry) => (
-      <EachData
-        key={entry.id}
-        {...entry}
-        onDelete={handleDelete}
-        onUpdate={updateEntry}
-      />
-    ))
-  )}
-</div>
-
-
-
-
-
-
+              <div className="AllData mx-4 m-5 p-6 rounded-2xl border border-teal-200 bg-gradient-to-br from-teal-50 to-white shadow-md grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+                  {entries.length === 0 ? 
+                   (
+                     <div className="col-span-full flex flex-col items-center justify-center text-center p-10 border-2 border-dashed border-teal-300 rounded-xl bg-white shadow-sm">
+                          <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-teal-400 mb-3"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                          </svg>
+                          <p className="text-gray-700 text-lg font-medium"> No credentials saved yet </p>
+                              <p className="text-gray-500 text-sm mt-1">
+                                Start by adding your first entry!
+                              </p>
+                    </div>
+                   ) :
+                   
+                   (
+                     entries.map((entry) => (
+                     <EachData key={entry.id} {...entry} onDelete={handleDelete} onUpdate={updateEntry}/>
+                    ))
+                   )
+                  }
+    </div>
       <div className="mt-auto">
         <Footer />
       </div>

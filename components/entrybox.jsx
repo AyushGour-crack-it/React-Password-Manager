@@ -32,8 +32,8 @@ const LeftBox = ({ addEntry }) => {
   };
 
   return (
-    <div className="bg-white rounded-2xl shadow-lg p-6 flex flex-col gap-4">
-      <form onSubmit={handleAdd} className="flex flex-col gap-4" id="Ayush">
+    <div className="bg-white rounded-2xl shadow-md p-6 flex flex-col gap-4">
+      <form onSubmit={handleAdd} className="flex flex-col gap-2 sm:gap-4" id="Ayush">
         <input
           type="text"
           placeholder="Website"

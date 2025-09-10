@@ -108,7 +108,7 @@ const EachData = ({ id, website, username, password, date, onDelete, onUpdate, u
         ) : (
           <div className="flex justify-between items-center bg-gray-100 text-sm 
             font-medium text-gray-700 rounded-md px-2 py-1 w-full truncate">
-            👤 <span className="truncate">{username}</span>
+             <span className="truncate">{ "👤  " + username}</span>
             <img
               onClick={() => copyContent(username)}
               className="w-4 h-4 cursor-pointer opacity-70 hover:opacity-100"

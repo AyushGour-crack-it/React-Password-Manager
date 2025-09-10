@@ -9,11 +9,12 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-teal-500 shadow-md px-6 py-3 flex justify-between items-center rounded-b-lg">
+    <nav className="bg-teal-500 shadow-md px-6 py-3 flex justify-between items-center rounded-b-lg ">
       {/* Logo */}
       <div className="flex items-center gap-2">
         <img src={animatedIcon1} alt="logo" className="w-10 h-10" />
-        <span className="text-2xl md:text-3xl lg:text-4xl font-bold text-white tracking-wide">
+        <span className="text-2xl md:text-3xl lg:text-4xl font-extrabold tracking-wide 
+  bg-gradient-to-r from-white via-teal-100 to-teal-300 bg-clip-text text-transparent drop-shadow-sm">
           Tizori
         </span>
       </div>
