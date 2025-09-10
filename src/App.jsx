@@ -49,21 +49,25 @@ function App() {
       <div className="leftBox w-[90%] sm:w-4/5 md:w-2/3 lg:w-1/2 mx-auto mt-5">
         <LeftBox addEntry={addEntry} />
       </div>
-      <div className="AllData mx-4 m-5 p-6 rounded-2xl border border-teal-200 bg-gradient-to-br from-teal-50 to-white shadow-md 
-                grid sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center ">
-        {entries.length === 0 ? (
-          <p className="text-gray-500 text-center">No credentials saved yet.</p>
-        ) : (
-          entries.map((entry) => (
-            <EachData
-              key={entry.id}
-              {...entry}
-              onDelete={handleDelete}
-              onUpdate={updateEntry}
-            />
-          ))
-        )}
-      </div>
+<div className="AllData mx-4 m-5 p-6 rounded-2xl border border-teal-200 
+  bg-gradient-to-br from-teal-50 to-white shadow-md 
+  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+  {entries.length === 0 ? (
+    <p className="text-gray-500 text-center">No credentials saved yet.</p>
+  ) : (
+    entries.map((entry) => (
+      <EachData
+        key={entry.id}
+        {...entry}
+        onDelete={handleDelete}
+        onUpdate={updateEntry}
+      />
+    ))
+  )}
+</div>
+
+
+
 
 
 
