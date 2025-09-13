@@ -21,12 +21,13 @@ const Navbar = () => {
 
       {/* Right Icons */}
       <div className="flex items-center gap-4">
-        <MdLightMode
-          size={28}
-          className="text-white cursor-pointer hover:text-teal-300 transition"
-          onClick={handleToggle}
-        />
-        <a
+       <MdLightMode
+            size={28}
+  className="text-white cursor-pointer p-1 rounded-full
+             hover:bg-white/20 hover:scale-110 
+             transition-all duration-200 ease-in-out"
+/>
+       <a
           href="https://github.com/AyushGour-crack-it/React-Password-Manager"
           target="_blank"
           rel="noopener noreferrer"

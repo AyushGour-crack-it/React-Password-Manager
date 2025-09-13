@@ -1,7 +1,7 @@
 import { useState } from "react";
 import toast from "react-hot-toast";
 
-const LeftBox = ({ addEntry }) => {
+const LeftBox = ({ addEntry , inputRef}) => {
   const [website, setWebsite] = useState("");
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -35,6 +35,7 @@ const LeftBox = ({ addEntry }) => {
     <div className="bg-white rounded-2xl shadow-md p-6 flex flex-col gap-4">
       <form onSubmit={handleAdd} className="flex flex-col gap-2 sm:gap-4" id="Ayush">
         <input
+        ref = {inputRef}
           type="text"
           placeholder="Website"
           value={website}
